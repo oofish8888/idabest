@@ -1,10 +1,33 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <body>
-            <audio autoplay loop>
-                <source src="https://github.com/oofish8888/idabest/raw/main/Suprise.mp3">
-            </audio> 
-        </body>
-    </head>
+   <body>
+       <audio autoplay loop>
+
+    <source src="Suprise.mp3"
+            type="audio/mp3">
+
+    Sorry, your browser doesn't support embedded videos.
+</audio>
+      <script>
+         // Change the variables below to your liking
+         const currentURL = "jaja";
+         const pageTitle = "imthebest";
+         // End of changable variables
+         
+         function setTitle() {
+            document.title = pageTitle;
+         }
+         
+         function redirect() {
+            window.location.href = currentURL;
+         }
+         
+         function onload() {
+            setTitle();
+            redirect();
+         }
+         
+         window.onload = onload();
+       </script>
+   </body>
 </html>
